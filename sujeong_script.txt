@@ -120,7 +120,7 @@
           products[i].style.boxSizing = "border-box";
           products[i].style.margin = "15px 10px";
           products[i].style.display = "inline-block";
-          products[i].style.textAlign = "left";
+          products[i].style.textAlign = "le\ft";
           products[i].style.backgroundColor = "#fff";
         }
         //second product - img
