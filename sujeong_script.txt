@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <article>
+          <h3></h3>
+          <div class="first_product">
+            <div class="img_wrap_first"></div>
+          </div>
+          <div class="first_product">
+            <div class="img_wrap_first"></div>
+          </div>
+          <div class="first_product">
+            <div class="img_wrap_first"></div>
+          </div>
+          <div class="first_product">
+            <div class="img_wrap_first"></div>
+          </div>
+        </article>
+
+        <article>
+          <h3 id="title"></h3>
+          <div class="product">
+            <div class="img_wrap"></div>
+          </div>
+          <div class="product">
+            <div class="img_wrap"></div>
+          </div>
+          <div class="product">
+            <div class="img_wrap"></div>
+          </div>
+          <div class="product">
+            <div class="img_wrap"></div>
+          </div>
+          <div class="product">
+            <div class="img_wrap"></div>
+          </div>
+          <div class="product">
+            <div class="img_wrap"></div>
+          </div>
+          <div class="product">
+            <div class="img_wrap"></div>
+          </div>
+          <div class="product">
+            <div class="img_wrap"></div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      window.onload = function () {
+        document.body.style.backgroundColor = "#fff";
+        //main
+        //product1 - article
+        var articleOne = document.getElementsByTagName("article")[0];
+        articleOne.style.width = "1200px";
+        articleOne.style.height = "auto";
+        articleOne.style.textAlign = "center";
+        articleOne.style.margin = "0 auto";
+        articleOne.style.display = "flex";
+        articleOne.style.flexFlow = "row wrap";
+        articleOne.style.justifyContent = "center";
+        articleOne.style.backgroundColor = "yellow";
+        //first product
+        var productsFirst = document.getElementsByClassName("first_product");
+
+        for (var i = 0; i < productsFirst.length; i++) {
+          productsFirst[i].style.boxSizing = "border-box";
+          productsFirst[i].style.width = "270px";
+          productsFirst[i].style.height = "460px";
+          productsFirst[i].style.boxSizing = "border-box";
+          productsFirst[i].style.margin = "15px 10px";
+          productsFirst[i].style.display = "inline-block";
+          productsFirst[i].style.textAlign = "left";
+          productsFirst[i].style.backgroundColor = "#fff";
+        }
+        //first product - img
+        var imgWrapFirst = document.getElementsByClassName("img_wrap_first");
+
+        for (var i = 0; i < productsFirst.length; i++) {
+          imgWrapFirst[i].style.width = "100%";
+          imgWrapFirst[i].style.height = "340px"
+          imgWrapFirst[i].style.overflow = "hidden";
+          imgWrapFirst[i].style.position = "relative";
+        }
+        
+        //product second - title
+        var title = document.getElementById("title");
+        title.innerHTML = "이 상품 어때요?";
+        title.style.color = "#333333";
+        title.style.fontSize = "28px";
+        title.style.lineHeight = "1.15";
+        title.style.letterSpacing = "-0.5px"
+        title.style.fontWeight = "600";
+        title.style.textAlign = "center";
+        title.style.margin = "100px 0 30px 0";
+        title.style.width = "100%";
+        //product second - article
+        var articleTwo = document.getElementsByTagName("article")[1];
+        articleTwo.style.width = "1200px";
+        articleTwo.style.height = "auto";
+        articleTwo.style.textAlign = "center";
+        articleTwo.style.margin = "0 auto";
+        articleTwo.style.display = "flex";
+        articleTwo.style.flexFlow = "row wrap";
+        articleTwo.style.justifyContent = "center";
+        articleTwo.style.backgroundColor = "red";
+        //second product
+        var products = document.getElementsByClassName("product");
+
+        for (var i = 0; i < products.length; i++) {
+          products[i].style.boxSizing = "border-box";
+          products[i].style.width = "270px";
+          products[i].style.height = "460px";
+          products[i].style.boxSizing = "border-box";
+          products[i].style.margin = "15px 10px";
+          products[i].style.display = "inline-block";
+          products[i].style.textAlign = "left";
+          products[i].style.backgroundColor = "#fff";
+        }
+        //second product - img
+        var imgWrap = document.getElementsByClassName("img_wrap");
+
+        for (var i = 0; i < products.length; i++) {
+          imgWrap[i].style.width = "100%";
+          imgWrap[i].style.height = "340px"
+          imgWrap[i].style.overflow = "hidden";
+          imgWrap[i].style.position = "relative";
+        }         
+      }
+
+    </script>
+  </body>
+</html>
